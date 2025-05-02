@@ -1,0 +1,17 @@
+{
+  "Game 1": {
+    "game": "Atari Lynx",
+    "launch year": "1989",
+    "title": "Chip's Challenge"
+  },
+  "Game 2": {
+    "game": "Nintendo",
+    "launch year": "2003",
+    "title": "Legend of Zelda: Wind Waker"
+  },
+  "Game 3": {
+    "game": "Steam",
+    "launch year": "2016",
+    "title": "Human Fall Flat"
+  }
+}

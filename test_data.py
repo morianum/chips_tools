@@ -9,9 +9,9 @@ Created for the class Programming for Game Designers
 #  name
 #  launch_year
 class Platform:
-    def __init__(self, name="Unknown", launch_year=0):
-        self.name = name
-        self.launch_year = launch_year
+    def __init__(self, Buzz="Unknown", Bee=0):
+        self.name = Buzz # give me a permanent property called self.name, with the property 'name'
+        self.launch_year = Bee
 
 #This is the Game class.
 #Note that the initializer takes 3 arguments:
@@ -23,6 +23,8 @@ class Game:
         self.title = title
         self.platform = platform
         self.year = year
+    def __str__(self):
+        return f"{self.title}, {self.platform}"
 
 #This is the GameLibrary class.
 #It is defined by a single piece of data: a list of games
@@ -41,8 +43,8 @@ class GameLibrary:
             return_str += "    Title = " + game.title + "\n"
             return_str += "    Year  = " + str(game.year) + "\n"
             return_str += "    Platform = " + "\n"
-            return_str += "       Name = " + game.platform.name + "\n"
-            return_str += "       Launch Year = " + str(game.platform.launch_year) + "\n"
+            return_str += "       Name = " + game.platform + "\n"
+            # return_str += "       Launch Year = " + str(game.platform.launch_year) + "\n"
             game_count += 1
         return return_str
 
