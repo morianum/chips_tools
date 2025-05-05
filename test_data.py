@@ -8,10 +8,10 @@ Created for the class Programming for Game Designers
 #Note that the initializer takes 2 arguments:
 #  name
 #  launch_year
-class Platform:
-    def __init__(self, Buzz="Unknown", Bee=0):
-        self.name = Buzz # give me a permanent property called self.name, with the property 'name'
-        self.launch_year = Bee
+# class Platform:
+    # def __init__(self, name="Unknown", launch_year=0):
+        # self.name = name # give me a permanent property called self.name, with the property 'name'
+        # self.launch_year = launch_year
 
 #This is the Game class.
 #Note that the initializer takes 3 arguments:
@@ -19,10 +19,11 @@ class Platform:
 #  platform
 #  year
 class Game:
-    def __init__(self, title="Unknown", platform=None, year=0):
+    def __init__(self, title="Unknown", platform=None, year=0, platform_year=0):
         self.title = title
         self.platform = platform
         self.year = year
+        self.platform_year = platform_year
     def __str__(self):
         return f"{self.title}, {self.platform}"
 
@@ -37,14 +38,14 @@ class GameLibrary:
 
     def __str__(self):
         return_str = "Analyzing game library data:\n"
-        game_count = 0
+        game_count = 1
         for game in self.games:
             return_str += "  Game " + str(game_count) + "\n"
             return_str += "    Title = " + game.title + "\n"
             return_str += "    Year  = " + str(game.year) + "\n"
-            return_str += "    Platform = " + "\n"
+            return_str += "    Platform " + "\n"
             return_str += "       Name = " + game.platform + "\n"
-            # return_str += "       Launch Year = " + str(game.platform.launch_year) + "\n"
+            return_str += "       Launch Year = " + str(game.platform_year) + "\n"
             game_count += 1
         return return_str
 

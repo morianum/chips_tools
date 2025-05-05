@@ -1,17 +1,20 @@
 {
   "Game 1": {
-    "game": "Atari Lynx",
-    "launch year": "1989",
+    "platform": "Atari Lynx",
+    "game year": "1989",
+    "platform year": "1989",
     "title": "Chip's Challenge"
   },
   "Game 2": {
-    "game": "Nintendo",
-    "launch year": "2003",
+    "platform": "Nintendo",
+    "game year": "2003",
+    "platform year": "2001",
     "title": "Legend of Zelda: Wind Waker"
   },
   "Game 3": {
-    "game": "Steam",
-    "launch year": "2016",
+    "platform": "Steam",
+    "game year": "2016",
+    "platform year": "2003",
     "title": "Human Fall Flat"
   }
 }
