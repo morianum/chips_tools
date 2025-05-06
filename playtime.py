@@ -1,5 +1,5 @@
 # teaching myself a wee bit about classes and objects.
-# classes are like the blueprint off of which i make my objects. they're like the object builder.
+# classes are the blueprint off of which i make my objects. they're like the object builder.
 
 # here i'm making a class called ExampleClass with a property of x.
 class ExampleClass:
@@ -38,7 +38,7 @@ print(person1)
 # let's try it with a class that's for pets instead of people.
 # (question: why can we use the same property names for stuff in different classes?)
 class Pet:
-    def __init__(self, name, breed):
+    def __init__(self, name="Unknown", breed="Unknown"):
         self.name = name
         self.breed = breed
     # now let's make it print this stuff out legibly. return f"(blah blah) will do the trick.
@@ -50,9 +50,16 @@ class Pet:
 pet1 = Pet("Mowgli", "Goldendoodle")
 pet2 = Pet("Louie", "Goldendoodle")
 
+# another way:
+pet3 = Pet()
+# then set the attributes
+pet3.name = "Fluffy"
+pet3.breed = "Rat"
+
 # did it work? let's print them out.
 print(pet1)
 print(pet2)
+print(pet3)
 
 # what if I want to automatically write a sentence using object data?
 # we can do it by using a method. that's just a function that belongs to a specific object.
